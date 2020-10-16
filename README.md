@@ -22,6 +22,6 @@ The cardiovascular disease dataset is an open-source [dataset](https://www.kaggl
 - Alcohol intake (social history)
 - Physical activity (social history)
 
-## Limitations in Dataset
+## Limitations in Dataset:
 
 ### Team Members: Enrique Bustamante, Sara St. Jean, Ali Merchant, Anna Shvilpe, Ricardo Vasquez, Victor Rodriguez IV

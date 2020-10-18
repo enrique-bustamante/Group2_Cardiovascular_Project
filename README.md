@@ -13,7 +13,11 @@ The cardiovascular disease dataset is an open-source [dataset](https://www.kaggl
 
 ## Dataset
 
+<<<<<<< HEAD
  The dataset contains 70,000 records and contains 11 features (consisting of 4 demographic, 4 examination and 3 social history).
+=======
+The cardiovascular disease dataset is an open-source [dataset](https://www.kaggle.com/sulianova/cardiovascular-disease-dataset) that is found on Kaggle. The dataset contains 70,000 records (34,979 who have cardiovascular disease and 35,021 who do not have cardiovascular disease) and contains 11 features (consisting of 4 demographic, 4 examination and 3 social history).
+>>>>>>> 8873322be8fe784feb41ab8e777e3fd77a5d8f47
 
 - Age (demographic)
 - Height (demographic)

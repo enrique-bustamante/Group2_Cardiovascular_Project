@@ -3,7 +3,7 @@
 Pandas to convert data into a dataframe for data preprocessing and transformation. Additional Python modules will be added for statistical analysis, machine learning processing, etc.
 
 ## Database Storage
-Postgres SQL - PG Admin is the database storage for the raw and cleaned data. For our given dataset we have one table to reference therefore our ERD is a simple table with assigned data types. For deliverable week 1 we have imported our actual dataset and no sample data was used.
+Postgres SQL - PG Admin is the database storage for the raw and cleaned data. For our given dataset we have one table to reference therefore our ERD is a simple table with assigned data types. For deliverable week 1 we have imported our actual dataset and no sample data was used. <br>
 ![](Resources/QuickDBD-export.png)
 ![](Resources/Database_Import.JPG)
 

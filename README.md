@@ -11,7 +11,7 @@ Using medically examined data we aim to answer the following questions:
 - Can we create a model that would predict a Cardiovascular event?
 
 ## Resources
-The cardiovascular disease dataset is an open-source [dataset](https://www.kaggle.com/sulianova/cardiovascular-disease-dataset) that is found on Kaggle. 
+The cardiovascular disease dataset is an open-source [dataset](https://www.kaggle.com/sulianova/cardiovascular-disease-dataset) that is found on Kaggle.
 
 ## Dataset
 
@@ -31,6 +31,18 @@ The dataset contains 70,000 records (34,979 who have cardiovascular disease and 
 - Physical activity (social history)
 
 ## Limitations in Dataset:
+
+## Communication Protocols
+
+This set of rules will help unify our code and prevent issues.
+* Before working on your portion it is best to pull in from the remote repository. To do so use "git pull origin main".
+* When your push your commits, please either create a pull request and leave a message in the Group2 slack channel so that the git handler can merge the push with the main.
+* When committing, please leave a comment to says what was either added or changed on the code and to which file. This will help when merging.
+* When naming your variables, it would be preferable to use camel case (e.g. fileDatabaseCleaned) and have the name be more specific to the action taken and to the data it is taken on.
+* ABC: Always be committing
+* Please add comments on your scripts, particularly your pseudocode. While good code shouldn't need that many comments, it should include comments to guide the reader.
+* As git handler, I will keep an eye on how many commits a group member's branch is behind the main. If it is a large amount, I'll reach out to the owner of the branch to pull and update from the main branch.
+* When creating a new branch, use the following format: <Username> Segment <Segment number>
 
 
 ### Team Members: Enrique Bustamante, Sara St. Jean, Ali Merchant, Anna Shvilpe, Ricardo Vasquez, Victor Rodriguez IV

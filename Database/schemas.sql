@@ -9,7 +9,7 @@ CREATE TABLE medical (
 	ap_lo INT NOT NULL,
 	cholesterol INT NOT NULL,
 	glc INT NOT NULL,
-	bmi INT NOT NULL
+	bmi FLOAT NOT NULL
 );
 
 CREATE TABLE behavior (
@@ -33,15 +33,20 @@ SELECT * FROM behavior;
 --Joining medical and behavior tables
 
 SELECT medical.id,
-	medical.age,
-	medical.gender,
-	medical.height,
-	medical.weight,
-	medical.ap_hi,
-	medical.ap_lo,
-	medical.cholesterol,
-	medical.glc,
-	medical.bmi
-FROM medical
-LEFT JOIN behavior
-ON medical.id = behavior.id;
+	med.age,
+	med.gender,
+	med.height,
+	med.weight,
+	med.ap_hi,
+	med.ap_lo,
+	med.cholesterol,
+	med.glc,
+	med.bmi,
+	be.smoke,
+	be.alco,
+	be.active,
+	be.cardio
+INTO cardio_combined
+FROM medical as med
+LEFT JOIN behavior as be
+ON med.id = be.id;

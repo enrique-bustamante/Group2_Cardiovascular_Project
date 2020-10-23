@@ -1,21 +1,47 @@
---Creating tables for Cardio_Group2
-CREATE TABLE cardio (
+-- Creating table for Cardio Group 2
+CREATE TABLE medical (
 	id VARCHAR NOT NULL,
 	age INT NOT NULL,
-	gender VARCHAR(2) NOT NULL,
+	gender INT NOT NULL,
 	height INT NOT NULL,
-	weight DECIMAL NOT NULL,
+	weight INT NOT NULL,
 	ap_hi INT NOT NULL,
 	ap_lo INT NOT NULL,
 	cholesterol INT NOT NULL,
-	gluc INT NOT NULL,
-	smoke VARCHAR(2) NOT NULL,
-	alco VARCHAR(2) NOT NULL,
-	active VARCHAR(2) NOT NULL,
-	cardio VARCHAR(2) NOT NULL,
-	PRIMARY KEY (id)
+	glc INT NOT NULL,
+	bmi INT NOT NULL
 );
 
-DROP TABLE cardio;
+CREATE TABLE behavior (
+	id VARCHAR NOT NULL,
+	smoke VARCHAR NOT NULL,
+	alco VARCHAR NOT NULL,
+	active VARCHAR NOT NULL,
+	cardio VARCHAR NOT NULL
+);
 
-SELECT * FROM cardio;
+DROP TABLE medical;
+
+DROP TABLE behavior;
+
+
+
+SELECT * FROM medical;
+
+SELECT * FROM behavior;
+
+--Joining medical and behavior tables
+
+SELECT medical.id,
+	medical.age,
+	medical.gender,
+	medical.height,
+	medical.weight,
+	medical.ap_hi,
+	medical.ap_lo,
+	medical.cholesterol,
+	medical.glc,
+	medical.bmi
+FROM medical
+LEFT JOIN behavior
+ON medical.id = behavior.id;

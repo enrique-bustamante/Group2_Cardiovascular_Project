@@ -9,7 +9,7 @@ CREATE TABLE medical (
 	ap_lo INT NOT NULL,
 	cholesterol INT NOT NULL,
 	glc INT NOT NULL,
-	bmi INT NOT NULL
+	bmi FLOAT NOT NULL
 );
 
 CREATE TABLE behavior (

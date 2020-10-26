@@ -44,5 +44,7 @@ This set of rules will help unify our code and prevent issues.
 * As git handler, I will keep an eye on how many commits a group member's branch is behind the main. If it is a large amount, I'll reach out to the owner of the branch to pull and update from the main branch.
 * When creating a new branch, use the following format: <Username> Segment <Segment number>
 
+## Resources Used
+- [Center for Disease Control: Heart Disease Facts](https://www.cdc.gov/heartdisease/facts.htm) 
 
 ### Team Members: Enrique Bustamante, Sara St. Jean, Ali Merchant, Anna Shvilpe, Ricardo Vasquez, Victor Rodriguez IV

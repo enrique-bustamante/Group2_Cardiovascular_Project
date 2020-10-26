@@ -32,7 +32,7 @@ SELECT * FROM behavior;
 
 --Joining medical and behavior tables
 
-SELECT medical.id,
+SELECT med.id,
 	med.age,
 	med.gender,
 	med.height,

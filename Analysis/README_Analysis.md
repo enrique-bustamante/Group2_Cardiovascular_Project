@@ -1,5 +1,6 @@
+## Cardio Data Analysis 
 
-After exploring all the data visually and numerically we can observe multiple trends. The goal is our analysis was first to understand the distribution of the data by histogram of various parameters such as BMI, cholesterol, age, blood pressure, habits, glucose against main predictor/label (cardio event). 
+After exploring all the data visually and numerically we can observe multiple trends. The goal is our analysis was first to reveal trends and understand the distribution of the data by histogram of various parameters such as BMI, cholesterol, age, blood pressure, habits, glucose against main predictor/label (cardio event). 
  
  **BMI**
 When we binned BMI data, we observed that most of the population in our data is overweight to obese BMI levels. Later in the data analysis we see that BMI can indeed be a leading indicator, however, given the population bias of the dataset we need to remember that this can be skewing our results.

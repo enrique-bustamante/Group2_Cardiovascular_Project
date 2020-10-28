@@ -32,7 +32,6 @@ With excercise, we have almost 50K records out of 67K, however, Human Health Ser
 
 Based on the above, we have to question the reliability of the habits data in our dataset. We may need to potentially consider excluding it for Machine Learning if our model does not score high.
 
-----
-
-**Final thoughts** - BMI, Cholesterol and Blood Pressure are the main factors in predicting the cardio outcome successfully.\n",
+## Prelimnary Conclusions 
+BMI, Cholesterol and Blood Pressure are the main factors in predicting the cardio outcome successfully.
     

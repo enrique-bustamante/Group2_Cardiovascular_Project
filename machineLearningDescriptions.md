@@ -1,99 +1,35 @@
 # Preprocessing
 
-### Data Cleaning  
-
-- Noisy Data 
-1. Clustering 
-2. Binning Method 
-3. Regression 
-
-- Missing Data
-1. Fill in the missing values 
-
-### Data Transformation 
-
-- Discretization 
-- Normalization 
-- Atribute Selection 
-
-### Data Reduction 
-
-- Numerosity Reduction
-- Data Cube Aggregation
-- Dimensionality Reduction
-- Attribute Subset Selection
+- When creating a Machine Learning model data preprocessing is the next step in marking the process.  In the real world data is incomplete, inaccurate, inconsistent, and often lacks specific attributes.  Data preprocessing helps to clean, organize, and format the raw data to make it ready for Machine Learning models.  
+- In our Cardiovascular project Jupyter is being utilize to create the Machine Learning models.  We imported all the crucial libraries that were needed for our Cardiovascular project.  The libraries are the following: sqlalchemy import create_engine, MetaData, Table, import pandas as pd, import numpy as np, import psycopg2, from config import password, import matplotlib.pyplot as plt, and from scipy.stats import linregress.  
+- It is necessary to separate the independent variables and dependent variables in a dataset for every Machine Learning model.  
    
 # Feature engineering and selection
 
-### Feature Engineering
+- Process for creating features and mapping from raw data to Machine Learning is feature engineering.  This is what we have done in our Cardiovascular project is that we have transformed the raw data and created a Machine Learning model to show the results.  
 
-- Decomposing or Splitting Features
-- Data Enrichment
-- Feature Transformations
-- Automated Feature Engineering 
-  
- ### Feature Selection 
+- Machine Learning functions on a plain rule, if you place garbage in you will only get garbage to come out. 
+- By using the word garbage, I mean noise in data.  
+- Here are some of the top reasons to utilize feature selection as follows:
 
- - Correlation
- - Near Zero Variance
- - Principal Component Analysis (PCA)
- - Linear Discriminant Analysis (LDA)
- 
-# Splitting, Training, and Testing Sets
+1. It improves the accuracy of a model if the right subset is chose.
+2. It enables the machine learning algorithm to train faster.
+3. it reduces overfitting.
+4. It reduces the complexity of a model and makes it easier to interpret.   
 
-### SPlitting
+# Splitting, Training, and Testing Set
 
-- Hold-out
-- Training dataset
-- Monte-Carlo cross-validation
-- Validation dataset
-- Data for model training
-- Classification models
+- The problem of appropriate data splitting can be handled as a statistical sampling problem.  Various classical statistical sampling techniques can be employed to split the data.  
+- These sampling methods can be divided into the following categories based on their
+principles, goals and algorithmic and computational complexity:
 
-### Training 
+1. Simple random sampling (SRS),
+2. Trial-and-error methods,
+3. Systematic sampling,
+4. Convenience sampling,
+5. Stratified sampling.
 
-- Training Data
-- Machine Learning Algorithm 
-- Test Data 
-- Hypothesis 
-- Performance
-- Feedback
-  
-### Testing Sets
-
-- Original Data
-- Feature Selection
- 
-## Split Data
-
-- Training Set
-- Model Training 
-- Validation Set 
-- Validation Results
-- Test Set 
-- Final Model
+- Training data is the dataset used to train the algorithm or model so it can accurately predict our outcome of our Cardiovascular project data.  Training data trains an algorithm to recognize patterns in our dataset.
+- Test data is used to measure the accuracy and efficiency of our measurements of our Cardiovascular data, to detect how well it can predict the answers we are trying to compare based on its training.  
 
 # Explanation of model selections as well as benefits and limitations
-
-### Model Selections
-
-- Raw Data
-- Data Cleaning
-- Feature Engineering 
-- Model Selection 
-- Model Output 
-- Model Evaluation
-
-### Benefits
-
-- Identify accurate patterns
-- Forecast demands
-- No human intervention
-- Provide accurate results
-- Recommend products easily
-
-### Limitations
-- High error susceptibility 
-- Interpretation results 
-- Data acquisition 
-- Time and resources 

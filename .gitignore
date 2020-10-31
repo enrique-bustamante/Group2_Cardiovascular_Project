@@ -1,1 +1,8 @@
-config.py
+Analysis/config.py
+config.py*
+cardiovascularProjectMLCopy.ipynb
+cardiovascularProjectMLCopy.py
+Analysis/Cardiovascular_Project_Analysis.ipynb
+Analysis/__pycache__/config.cpython-37.pyc
+.DS_Store
+Analysis/.ipynb_checkpoints/*

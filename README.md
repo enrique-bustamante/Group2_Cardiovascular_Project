@@ -65,5 +65,6 @@ This set of rules will help unify our code and prevent issues.
 
 ## Resources Used
 - [Center for Disease Control: Heart Disease Facts](https://www.cdc.gov/heartdisease/facts.htm) 
+- [Heart Disease: Facts, Statistics, and You](https://www.healthline.com/health/heart-disease/statistics)
 
 ### Team Members: Enrique Bustamante, Sara St. Jean, Ali Merchant, Anna Shvilpe, Ricardo Vasquez, Victor Rodriguez IV

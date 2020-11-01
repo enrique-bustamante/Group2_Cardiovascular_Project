@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+  <meta charset="utf-8" />
+  <title>Cardiovascular Disease</title>
+  <link type="text/css" rel="stylesheet"
+        href="{{ url_for('static',
+              filename='hello.css')}}" />
+</head>
+<body>  
+    <div class="container">
+        <!-- Add jumbotron for header -->
+        <div class="jumbotron text-center">
+          <h1>Cardiovascular Disease Dashboard</h1>
+          <!-- Add button to activate scraping script -->
+          <p><a class="btn btn-danger btn-lg" href="/scrape" role="button" style="background-color: rgb(214, 214, 214)">Scrape New Data</a></p> 
+        </div>
+    <!-- Add section for Mars News -->
+    <div class="row" id="mars-news">
+        <div class="col-md-12" style="background-color: rgb(214, 214, 214); border: blue; border-style: double; border-width: 4pt">
+          <div class="media">
+            <div class="media-body">
+              <h2>Analysis Prompt</h2>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row" id="mars-featured-image">
+        <!-- Second level -->
+        <!-- Featured Image -->
+        <div class="col-md-8" >
+          <h2>Featured Mars Image</h2>
+          <img src="Diastolic_Blood_Pressure_Breakdown.png" alt="Responsive image" />
+        </div>
+        <!-- Mars Facts -->
+        <div class="col-md-4">
+          <div class="row" id="mars-facts">
+            <h4>Findings</h4>
+            <h5>Machine Learning Analysis</h5>
+        </div>
+        </div>
+      </div>
+</body>
+</html>

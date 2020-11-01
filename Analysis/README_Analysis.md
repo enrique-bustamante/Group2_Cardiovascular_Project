@@ -3,14 +3,17 @@
 After exploring all the data visually and numerically we can observe multiple trends. The goal in our analysis was first to reveal trends and understand the distribution of the data by histogram of various parameters such as BMI, cholesterol, age, blood pressure, habits, glucose against main predictor/label (cardio event). 
  
  **BMI**
+
 When we binned the BMI data, we observed that most of the population in our data is overweight to obese BMI levels. Later in the data analysis we see that BMI can indeed be a leading indicator, however, given the population bias of the dataset we need to remember that this can be skewing our results.
 
 ![Chart 1 - BMI Breakdown](https://github.com/enrique-bustamante/Group2_Cardiovascular_Project/blob/main/Resources/BMI_Breakdown.png)
  
  **Age**
+ 
 We looked at the age, and there is no data for age below 36, which may not be the limiting factor given it's known that cardio risk increases with age. However, if we are trying to predict cardio events for people at the younger end of our dataset, e.g., 40 years old, we may be biasing the predictions by those at the older end.
 
 **Blood Pressure**
+
  When looking at the blood pressure records, 40K of the data points fall strictly into the normal range for AP high and AP Low (as defined dy the chart). 1/3 of that population had a cardio event(~14K). However, it's hard to reveal if blood pressure is a predictor based on that alone. When we look at data outsdie of normal ranges there is a high relationship between being outside of normal range and having a cardio event. It is inhertly hard to bin into strict bounds because some people may have high upper but normal lower or vice versa. Therefore, We tested different bounds and observed consistent results, although we have a small population of people with low blood pressure. 
 
  ![Chart 2 - Diastolic Blood Pressure Breakdown](https://github.com/enrique-bustamante/Group2_Cardiovascular_Project/blob/main/Resources/Diastolic_Blood_Pressure_Breakdown.png)
@@ -25,6 +28,7 @@ We looked at the age, and there is no data for age below 36, which may not be th
  ![Chart 4 - Cholesterol Distribution](https://github.com/enrique-bustamante/Group2_Cardiovascular_Project/blob/main/Resources/Cholesterol_Distribution.png) 
  
  **Glucose**
+ 
  Didn't seem a reliable indicator from box plot as well as we observed the highest number of cases in glucose level 1 which healthy level.
    
  **Gender**

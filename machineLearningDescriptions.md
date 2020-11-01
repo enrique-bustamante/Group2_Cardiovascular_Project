@@ -33,3 +33,7 @@ principles, goals and algorithmic and computational complexity:
 - Test data is used to measure the accuracy and efficiency of our measurements of our Cardiovascular data, to detect how well it can predict the answers we are trying to compare based on its training.  
 
 # Explanation of model selections as well as benefits and limitations
+
+- Model selection is the procedure of choosing one of the models as the final model that will address the problem, in this case the advantages and disadvantages of our Cardiovascular results.
+- The benefits of model selection is a measure that can be utilize across different types of models.   
+- Some of the limitations of model selection is that may predictors with many possible interactions, can make it difficult to search for the best model.  

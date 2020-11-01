@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+  <meta charset="utf-8" />
+  <title>Cardiovascular Disease</title>
+  <link type="text/css" rel="stylesheet" />
+</head>
+<body>  
+    <div class="container">
+        <!-- Add jumbotron for header -->
+        <div class="jumbotron text-center">
+          <h1>Cardiovascular Disease Dashboard</h1>
+          <!-- Add button to activate scraping script --> 
+        </div>
+        <div class="col-md-4">
+          <div class="row" id="mars-facts", style="float: right; border: double;",>
+            <h4>Find out if you might have a Cardiovascular Disease:</h4>
+            <p>Height:</p>
+            <p>Age:</p>
+            <p>Weight:</p>
+            <p>Blood Pressure:</p>
+            <p>Glucose:</p>
+            <p><a class="btn btn-danger btn-lg" href="/scrape" role="button" style="background-color: rgb(214, 214, 214)">Submit</a></p>
+            <h4>Result:</h4>
+        </div>
+    <!-- Add section for Mars News -->
+    <div class="row" id="mars-news">
+        <div class="col-md-12">
+          <div class="media">
+            <div class="media-body">
+              <h2>Analysis Prompt</h2>
+              <h3>Objective/Purpose</h3>
+              <p>Heart disease is the leading cause of death for both men and women, and people of most racial and ethnic groups in the US. About 665,000 individuals die from heart disease each year in the US - 1 in every 4 deaths. It is also the most preventable. Our group is reviewing a dataset that looks at patient data (age, weight, gender, smoking, activity level, etc) and the prevalence of cardiovascular disease. We're going to analyze which factors might contribute more heavily to the disease and shed light on a condition that can be preventable by taking a proactive approach to our lifestyle.</p>
+              <h3>Findings</h3>
+              <p>BMI, Cholesterol and Blood Pressure are likely going to be the main factors in predicting the cardio outcome successfully.</p>
+              <h3>Machine Learning Analysis</h3>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row" id="mars-featured-image">
+        <!-- Second level -->
+        <!-- Featured Image -->
+        <div class="col-md-8" >
+          <h2>Blood Pressure Breakdown</h2>
+          <img src="/Resources/Diastolic_Blood_Pressure_Breakdown.png" alt="Diastolic_Blood_Pressure_Breakdown" />
+          <img src="/Resources/Systolic_Blood_Pressure_Breakdown.png" alt="Systolic_Blood_Pressure_Breakdown" />
+          <h3>Cholesterol Distribution</h3>
+          <img src="/Resources/Cholesterol_Distribution.png" alt="Cholesterol_Distribution" />
+          <h4>BMI Breakdown</h4>
+          <img src="/Resources/BMI_Breakdown.png" alt="BMI_Breakdown" />
+          <p>Most of the population in our data is overweight to obese BMI levels</p>
+        </div>
+        <!-- Mars Facts -->
+      </div>
+</body>
+</html>

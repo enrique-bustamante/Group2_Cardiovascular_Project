@@ -37,7 +37,7 @@ The 11 features above determine
 
 ## Dashboard
 
-- screenshot of dashboard here
+![Dashboard](https://github.com/enrique-bustamante/Group2_Cardiovascular_Project/blob/main/Resources/dashboard.png)
 
 ### Tools Used
 

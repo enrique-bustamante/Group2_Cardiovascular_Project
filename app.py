@@ -1,10 +1,17 @@
-from flask import Flask 
+import flask
 
-app = Flask(__name__) 
 
-@app.route("/") 
-def home_view(): 
-		return "<h1>Cardiovascular Disease</h1>"
+# Create the application.
+APP = flask.Flask(__name__)
 
-if __name__ == "__main__":
-    app.run()
+
+@APP.route('/')
+def index():
+    """ Displays the index page accessible at '/'
+    """
+    return flask.render_template('index.html')
+
+
+if __name__ == '__main__':
+    APP.debug=True
+    APP.run()

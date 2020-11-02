@@ -1,39 +1,20 @@
-# Preprocessing
+## Machine Learning
 
-- When creating a Machine Learning model data preprocessing is the next step in marking the process.  In the real world data is incomplete, inaccurate, and inconsistent.  Data preprocessing helps to clean, organize, and format the raw data to make it ready for Machine Learning models.  In our project the attributes were scaled and labels were separated.  
-- In our Cardiovascular project Jupyter is being utilize to create the Machine Learning models.  We imported all the crucial libraries that were needed for our Cardiovascular project.  The libraries are the following: sqlalchemy import create_engine, MetaData, Table, import pandas as pd, import numpy as np, import psycopg2, from config import password, import matplotlib.pyplot as plt, and from scipy.stats import linregress.  
-- It is necessary to separate the independent variables and dependent variables in a dataset for every Machine Learning model.  
+### Preprocessing
+
+When creating a Machine Learning model data preprocessing is the next step in marking the process. We cleaned up the data by removing the outliers in a few of the categories. Finally, we separated the dataset into attributes and labels by splitting all but the cardio column into attributes, leaving cardio in the labels group.
    
-# Feature engineering and selection
+### Feature engineering and selection
 
-- Process for creating features and mapping from raw data to Machine Learning is feature engineering.  This is what we have done in our Cardiovascular project is that we have transformed the raw data and created a Machine Learning model to show the results.  By doing so we utilized Grid Search CV in our project for our results.     
-- Machine Learning functions on a plain rule, if you place garbage in you will only get garbage to come out.  By using the word garbage, I mean noise in data.  
-
-- Here are some of the top reasons to utilize feature selection as follows:
-
-1. It improves the accuracy of a model if the right subset is chose.
-2. It enables the machine learning algorithm to train faster.
-3. It reduces overfitting.
-4. It reduces the complexity of a model and makes it easier to interpret.   
+Fortunately, the data was already in a codified format, so encoding such as OneHotEncoder wasn't needed to make the data usable in the machine learning model. We then standardized the data using StandardScaler, to ensure that one feature doesn't skew the data.
 
 # Splitting, Training, and Testing Set 
 
-- The problem of appropriate data splitting can be handled as a statistical sampling problem.  Various classical statistical sampling techniques can be employed to split the data.
-- Train-test-split was used to split data into training and testing sets at the default 75/25 split.  
-- These sampling methods can be divided into the following categories based on their principles, goals and algorithmic and computational complexity:
-
-1. Simple random sampling (SRS),
-2. Trial-and-error methods,
-3. Systematic sampling,
-4. Convenience sampling,
-5. Stratified sampling.
-
-- Training data is the dataset used to train the algorithm or model so it can accurately predict our outcome of our Cardiovascular project data.  Training data trains an algorithm to recognize patterns in our dataset.
-- Test data is used to measure the accuracy and efficiency of our measurements of our Cardiovascular data, to detect how well it can predict the answers we are trying to compare based on its training.  
+Train_test_split was used to split data into training and testing sets at the default 75/25 split. This would allow us to have enough data to fit the model and have a decent sized test set. We may change the setting to be an 80/20 but that is still a consideration that can be made before the finalization of this project.
+  
 
 # Explanation of model selections as well as benefits and limitations
 
-- Model selection is the procedure of choosing one of the models as the final model that will address the problem, in this case the advantages and disadvantages of our Cardiovascular results.
-- The benefits of model selection is a measure that can be utilize across different types of models.
-- In our Cardiovascular project we chose the random forest model due to obtaining a higher accuracy and valuable interpretability.      
-- Some of the limitations of model selection is that many predictors with many possible interactions, can make it difficult to search for the best model.  
+For our Cardiovascular project, we chose the random forest model in order to obtain a higher level of accuracy and its ability to handle higher dimensionality. Random forest is also less susceptible to outliers and is indifferent to non-linear features. It also has a tendency to have low bias and moderate variance.      
+
+Some of the limitations of random forest include potential for overfitting, a moderate level of interpretability, and since this is a large dataset, a large amount of memory is utilized.  

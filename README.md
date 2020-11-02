@@ -31,13 +31,13 @@ The dataset contains 70,000 records (34,979 who have cardiovascular disease and 
 - Alcohol intake (social history)
 - Physical activity (social history)
 
-The 11 features above determine
+The 11 features above can assist in helping us predict a cardiovascular event. 
 
 ## Limitations in Dataset
 
 ## Dashboard
 
-- screenshot of dashboard here
+![Dashboard](https://github.com/enrique-bustamante/Group2_Cardiovascular_Project/blob/main/Resources/dashboard.png)
 
 ### Tools Used
 
@@ -59,7 +59,7 @@ This set of rules will help unify our code and prevent issues.
 * When committing, please leave a comment to says what was either added or changed on the code and to which file. This will help when merging.
 * When naming your variables, it would be preferable to use camel case (e.g. fileDatabaseCleaned) and have the name be more specific to the action taken and to the data it is taken on.
 * ABC: Always be committing
-* Please add comments on your scripts, particularly your pseudocode. While good code shouldn't need that many comments, it should include comments to guide the reader.
+* Please add comments on your scripts, particularly your pseudo-code. While good code shouldn't need that many comments, it should include comments to guide the reader.
 * As git handler, I will keep an eye on how many commits a group member's branch is behind the main. If it is a large amount, I'll reach out to the owner of the branch to pull and update from the main branch.
 * When creating a new branch, use the following format: <Username> Segment <Segment number>
 
@@ -79,10 +79,12 @@ When we binned the BMI data, we observed that most of the population in our data
 ![Chart 1 - BMI Breakdown](https://github.com/enrique-bustamante/Group2_Cardiovascular_Project/blob/main/Resources/BMI_Breakdown.png)
 
  **Age**
+
 We looked at the age, and there is no data for age below 36, which may not be the limiting factor given it's known that cardio risk increases with age. However, if we are trying to predict cardio events for people at the younger end of our dataset, e.g., 40 years old, we may be biasing the predictions by those at the older end.
 
 **Blood Pressure**
- When looking at the blood pressure records, 40K of the data points fall strictly into the normal range for AP high and AP Low (as defined dy the chart). 1/3 of that population had a cardio event(~14K). However, it's hard to reveal if blood pressure is a predictor based on that alone. When we look at data outsdie of normal ranges there is a high relationship between being outside of normal range and having a cardio event. It is inhertly hard to bin into strict bounds because some people may have high upper but normal lower or vice versa. Therefore, We tested different bounds and observed consistent results, although we have a small population of people with low blood pressure.
+
+ When looking at the blood pressure records, 40K of the data points fall strictly into the normal range for AP high and AP Low (as defined dy the chart). 1/3 of that population had a cardio event(~14K). However, it's hard to reveal if blood pressure is a predictor based on that alone. When we look at data outside of normal ranges there is a high relationship between being outside of normal range and having a cardio event. It is inherently hard to bin into strict bounds because some people may have high upper but normal lower or vice versa. Therefore, We tested different bounds and observed consistent results, although we have a small population of people with low blood pressure.
 
  ![Chart 2 - Diastolic Blood Pressure Breakdown](https://github.com/enrique-bustamante/Group2_Cardiovascular_Project/blob/main/Resources/Diastolic_Blood_Pressure_Breakdown.png)
 
@@ -96,23 +98,43 @@ We looked at the age, and there is no data for age below 36, which may not be th
  ![Chart 4 - Cholesterol Distribution](https://github.com/enrique-bustamante/Group2_Cardiovascular_Project/blob/main/Resources/Cholesterol_Distribution.png)
 
  **Glucose**
+
  Didn't seem a reliable indicator from box plot as well as we observed the highest number of cases in glucose level 1 which healthy level.
 
  **Gender**
 
- We have more female entries, but proportionally the percentage of cadio events was evenly distributed between male and female.
+ We have more female entries, but proportionally the percentage of cardio events was evenly distributed between male and female.
 
  **Habits Analysis**
 
-Looking at the habits such as smoking, our total population is ~67K and we only have ~6K smokers which is about 9% and the US estimated is 15%(ref.: CDC). The data analysis suggests there is 50/50 chance for cardio event based on smoking habits. But there is a chance smokers are being underreported in our population.
+Looking at the habits such as smoking, our total population is ~67K and we only have ~6K smokers which is about 9% and the US estimated is 15%(ref.: CDC). The data analysis suggests there is 50/50 chance for cardio event based on smoking habits. But there is a chance smokers are being under reported in our population.
 
-Similar trend is observed for alcohol habits, data suggests that 50/50 percent chance alcohol contributes to cardio events. Our population is very low, out of ~67K only ~3K reported they drank. In the 2018 National Institute of Health (NIH) national survey on drug use and health only 55% reported they drank in the past month. There is a high chance that drinkers are being underreported in our population.
+Similar trend is observed for alcohol habits, data suggests that 50/50 percent chance alcohol contributes to cardio events. Our population is very low, out of ~67K only ~3K reported they drank. In the 2018 National Institute of Health (NIH) national survey on drug use and health only 55% reported they drank in the past month. There is a high chance that drinkers are being under reported in our population.
 
-With excercise, we have almost ~50K records out of ~67K, however, Human Health Services (HSS), US Government body, reported that only 1 in 3 adults receive the recommended amount of physical activity each week. It's highly likely that physical activity is or may be being overreported.
+With exercise, we have almost ~50K records out of ~67K, however, Human Health Services (HSS), US Government body, reported that only 1 in 3 adults receive the recommended amount of physical activity each week. It's highly likely that physical activity is or may be being over reported.
 
-Based on the above, we have to question the reliability of the habits data in our dataset, particulraly if it is self-reported. We may need to potentially consider excluding it for Machine Learning if our model does not score high.
+Based on the above, we have to question the reliability of the habits data in our dataset, particularly if it is self-reported. We may need to potentially consider excluding it for Machine Learning if our model does not score high.
 
 ## Preliminary Conclusions
 BMI, Cholesterol and Blood Pressure are likely going to be the main factors in predicting the cardio outcome successfully.
 
+## Machine Learning
 
+### Preprocessing
+
+When creating a Machine Learning model data preprocessing is the next step in marking the process. We cleaned up the data by removing the outliers in a few of the categories. Finally, we separated the dataset into attributes and labels by splitting all but the cardio column into attributes, leaving cardio in the labels group.
+   
+### Feature engineering and selection
+
+Fortunately, the data was already in a codified format, so encoding such as OneHotEncoder wasn't needed to make the data usable in the machine learning model. We then standardized the data using StandardScaler, to ensure that one feature doesn't skew the data.
+
+### Splitting, Training, and Testing Set 
+
+Train_test_split was used to split data into training and testing sets at the default 75/25 split. This would allow us to have enough data to fit the model and have a decent sized test set. We may change the setting to be an 80/20 but that is still a consideration that can be made before the finalization of this project.
+  
+
+### Model Selection: Benefits and Limitations
+
+For our Cardiovascular project, we chose the random forest model in order to obtain a higher level of accuracy and its ability to handle higher dimensionality. Random forest is also less susceptible to outliers and is indifferent to non-linear features. It also has a tendency to have low bias and moderate variance.      
+
+Some of the limitations of random forest include potential for overfitting, a moderate level of interpretability, and since this is a large dataset, a large amount of memory is utilized.  

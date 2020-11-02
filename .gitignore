@@ -8,3 +8,5 @@ Analysis/__pycache__/config.cpython-37.pyc
 Analysis/.ipynb_checkpoints/*
 __pycache__
 machineLearningDescriptions.machineLearningDescriptions
+.ipynb_checkpoints
+.vscode

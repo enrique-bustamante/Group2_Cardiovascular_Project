@@ -128,12 +128,12 @@ When creating a Machine Learning model data preprocessing is the next step in ma
 
 Fortunately, the data was already in a codified format, so encoding such as OneHotEncoder wasn't needed to make the data usable in the machine learning model. We then standardized the data using StandardScaler, to ensure that one feature doesn't skew the data.
 
-# Splitting, Training, and Testing Set 
+### Splitting, Training, and Testing Set 
 
 Train_test_split was used to split data into training and testing sets at the default 75/25 split. This would allow us to have enough data to fit the model and have a decent sized test set. We may change the setting to be an 80/20 but that is still a consideration that can be made before the finalization of this project.
   
 
-# Explanation of model selections as well as benefits and limitations
+### Model Selection: Benefits and Limitations
 
 For our Cardiovascular project, we chose the random forest model in order to obtain a higher level of accuracy and its ability to handle higher dimensionality. Random forest is also less susceptible to outliers and is indifferent to non-linear features. It also has a tendency to have low bias and moderate variance.      
 

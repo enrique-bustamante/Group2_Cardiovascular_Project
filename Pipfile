@@ -11,6 +11,9 @@ psycopg2-binary = "*"
 flask = "*"
 sklearn = "*"
 pandas = "*"
+matplotlib = "*"
+scipy = "*"
+sqlalchemy = "*"
 
 [requires]
 python_version = "3.7"

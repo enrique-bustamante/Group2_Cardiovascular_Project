@@ -35,6 +35,14 @@ The 11 features above can assist in helping us predict a cardiovascular event.
 
 ## Limitations in Dataset
 
+Information given by the patient cannot be trusted, which is subjective, listed below:
+
+- Smoking
+- Alcohol intake
+- Physical activity
+
+Difficult to take patients answers into account since they might not be accurate. 
+
 ## Dashboard
 
 ![Dashboard](https://github.com/enrique-bustamante/Group2_Cardiovascular_Project/blob/main/Resources/dashboard.png)

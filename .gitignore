@@ -10,3 +10,4 @@ __pycache__
 machineLearningDescriptions.machineLearningDescriptions
 .ipynb_checkpoints
 .vscode
+*.pyc

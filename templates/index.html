@@ -22,6 +22,28 @@
             <p>Glucose:</p>
             <p><a class="btn btn-danger btn-lg" href="/scrape" role="button" style="background-color: rgb(214, 214, 214)">Submit</a></p>
             <h4>Result:</h4>
+            
+            <div class="main">
+              <form class="pure-form" method="POST" action="/">
+              Weight in lbs:<br>
+              <input type="text" name="weight"><br>
+              Height in inches:<br>
+              <input type="text" name="height"><br>
+              <button type="submit" class="pure-button pure-button-primary" value="Submit">Submit</button>
+              </form>
+            </div>
+            
+            <br>
+            
+            <div class="main">
+              {% if bmi %}
+                  <p>
+                    {% print("Your BMI is {}.".format(bmi)) %}
+                    </p>
+              {% endif %}
+            </div>
+          
+      </body>
         </div>
     <!-- Add section for Mars News -->
     <div class="row" id="mars-news">
@@ -41,17 +63,15 @@
       <div class="row" id="mars-featured-image">
         <!-- Second level -->
         <!-- Featured Image -->
-        <div class="col-md-8" >
+        <div class="col-md-4" >
           <h2>Blood Pressure Breakdown</h2>
-          <img src="/Resources/Diastolic_Blood_Pressure_Breakdown.png" alt="Diastolic_Blood_Pressure_Breakdown" />
-          <img src="/Resources/Systolic_Blood_Pressure_Breakdown.png" alt="Systolic_Blood_Pressure_Breakdown" />
+          <img src="../Resources/Diastolic_Blood_Pressure_Breakdown.png" alt="Diastolic_Blood_Pressure_Breakdown" />
+          <img src="../Resources/Systolic_Blood_Pressure_Breakdown.png" alt="Systolic_Blood_Pressure_Breakdown" />
           <h3>Cholesterol Distribution</h3>
-          <img src="/Resources/Cholesterol_Distribution.png" alt="Cholesterol_Distribution" />
+          <img src="../Resources/Cholesterol_Distribution.png" alt="Cholesterol_Distribution" />
           <h4>BMI Breakdown</h4>
-          <img src="/Resources/BMI_Breakdown.png" alt="BMI_Breakdown" />
+          <img src="../Resources/BMI_Breakdown.png" alt="BMI_Breakdown" />
           <p>Most of the population in our data is overweight to obese BMI levels</p>
         </div>
-        <!-- Mars Facts -->
       </div>
-</body>
 </html>

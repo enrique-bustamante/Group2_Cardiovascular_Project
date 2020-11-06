@@ -14,6 +14,7 @@ pandas = "*"
 matplotlib = "*"
 scipy = "*"
 sqlalchemy = "*"
+awsebcli = "*"
 
 [requires]
 python_version = "3.7"

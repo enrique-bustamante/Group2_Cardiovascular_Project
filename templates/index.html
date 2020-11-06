@@ -1,17 +1,30 @@
 <!DOCTYPE html>
-<html lang='en'>
+<html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <title>Cardiovascular Disease</title>
-  <link type="text/css" rel="stylesheet" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cardiovascular Disease Dashboard</title>
+    <link
+    rel="stylesheet"
+    href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+    crossorigin="anonymous"/>
+  <link rel="stylesheet" href="style.css">
 </head>
-<body>  
-    <div class="container">
-        <!-- Add jumbotron for header -->
-        <div class="jumbotron text-center">
-          <h1>Cardiovascular Disease Dashboard</h1>
-          <!-- Add button to activate scraping script --> 
+<body>
+    
+    <body class="bg-white">
+        <div class="wrapper">
+            <nav class="navbar navbar-dark bg-primary navbar-expand-lg">
+                <a class="navbar-brand" href="index.html">
+                    
+                    Cardiovascular Disease Dashboard
+                    
+                </a>
+                <img class="nav-heart" src="https://raw.githubusercontent.com/enrique-bustamante/Group2_Cardiovascular_Project/main/Resources/thumbnails/heart_thumbnail.png">
+            </nav>
         </div>
+<<<<<<< HEAD
         <div class="col-md-4">
           <div class="row" id="mars-facts", style="float: right; border: double;",>
             <h4>Find out if you might have a Cardiovascular Disease:</h4>
@@ -74,4 +87,89 @@
           <p>Most of the population in our data is overweight to obese BMI levels</p>
         </div>
       </div>
+=======
+
+        <div class="hero-image">
+            <div class="hero-text">
+              <h1>Cardiovascular Disease</h1><hr>
+            </div>
+          </div>
+          <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+          <div class="container-fluid">
+            <div class="row">
+              <div class="col-md-4"><br><br>
+                <h2>Blood Pressure Breakdown</h2>
+                <img class="dbpb" src="https://raw.githubusercontent.com/enrique-bustamante/Group2_Cardiovascular_Project/main/Resources/Diastolic_Blood_Pressure_Breakdown.png">
+                <img class="sbpb" src="https://raw.githubusercontent.com/enrique-bustamante/Group2_Cardiovascular_Project/main/Resources/Systolic_Blood_Pressure_Breakdown.png">
+                <p></p>
+              </div>
+              <div class="col-md-8"><br><br>
+                <p>
+                    <b>Objective/Purpose</b><br>
+                    
+                    Heart disease is the leading cause of death for both men and women, and people of most racial 
+                    and ethnic groups in the US. About 665,000 individuals die from heart disease each year in the 
+                    US - 1 in every 4 deaths. It is also the most preventable. Our group is reviewing a dataset 
+                    that looks at patient data (age, weight, gender, smoking, activity level, etc) and the prevalence 
+                    of cardiovascular disease. We're going to analyze which factors might contribute more heavily to 
+                    the disease and shed light on a condition that can be preventable by taking a proactive approach 
+                    to our lifestyle.<br><br>
+    
+                    <b>Findings</b><br>
+    
+                    BMI, Cholesterol and Blood Pressure are likely going to be the main factors in predicting the cardiovascular outcome successfully.<br><br>
+
+                    <b>Machine Learning Analysis</b>
+    
+                </p><br><br>
+
+               
+  
+                <h2>Cholesterol Distribution</h3>
+                <img class="chol" src="https://raw.githubusercontent.com/enrique-bustamante/Group2_Cardiovascular_Project/main/Resources/Cholesterol_Distribution.png" alt="Cholesterol_Distribution" />
+                <h2>BMI Breakdown</h4>
+                <img class="bmi" src="https://raw.githubusercontent.com/enrique-bustamante/Group2_Cardiovascular_Project/main/Resources/BMI_Breakdown.png" alt="BMI_Breakdown" />
+                <p>Most of the population in our data is overweight to obese BMI levels</p>
+
+              </div>
+            </div>
+          </div>
+    
+         
+          <div class="container-fluid">
+            <div class="row">
+              <div class="col-md-2">
+                <form class="bg-insert-table"> 
+                    <div class="panel-heading">Find out if you're at risk for Cardiovascular Disease </div><br>
+                    <ul class="bg-primary">
+                      <li class="bg-primary">
+                        <label for="date">Enter Height</label>
+                        <input class="form-control" id="height" type="text" placeholder="1/1/2020">
+                      </li><br>
+                      <li class="bg-primary">
+                        <label for="city">Enter Age</label>
+                        <input class="form-control" id="age" type="text" placeholder="benton">
+                      </li><br>
+                      <li class="bg-primary">
+                        <label for="state">Enter Weight</label>
+                        <input class="form-control" id="weight" type="text" placeholder="ar">
+                      </li><br>
+                      <li class="bg-primary">
+                        <label for="country">Enter Blood Pressure</label>
+                        <input class="form-control" id="bloodpressure" type="text" placeholder="us">
+                      </li><br>
+                      <li class="bg-primary">
+                        <label for="shape">Enter Glucose</label>
+                        <input class="form-control" id="glucose" type="text" placeholder="circle">
+                      </li><br>
+                      <li class="bg-dark">
+                         <button id="filter-btn" type="submit" class="btn btn-default">Filter Table</button>
+                      </li>
+                    </ul>
+                   </form><br>
+              </div>
+        
+
+</body>
+>>>>>>> 98006e295dbea99ba420855260ac0b7c435f339f
 </html>

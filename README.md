@@ -31,7 +31,7 @@ The dataset contains 70,000 records (34,979 who have cardiovascular disease and 
 - Alcohol intake (social history)
 - Physical activity (social history)
 
-The 11 features above can assist in helping us predict a cardiovascular event. 
+The 11 features above can assist in helping us predict a cardiovascular event.
 
 ## Limitations in Dataset
 
@@ -41,7 +41,7 @@ Information given by the patient cannot be trusted, which is subjective, listed 
 - Alcohol intake
 - Physical activity
 
-Difficult to take patients answers into account since they might not be accurate. 
+Difficult to take patients answers into account since they might not be accurate.
 
 ## Dashboard
 
@@ -59,17 +59,6 @@ Difficult to take patients answers into account since they might not be accurate
 ### GoogleSlides
 Click [here](https://docs.google.com/presentation/d/1CLlYEob1KDY201-xxJQNkHgQrruSIw2wHYbGwUDNzWc/edit?usp=sharing) to access the GoogleSlides presentation.
 
-## Communication Protocols
-
-This set of rules will help unify our code and prevent issues.
-* Before working on your portion it is best to pull in from the remote repository. To do so use "git pull origin main".
-* When your push your commits, please either create a pull request and leave a message in the Group2 slack channel so that the git handler can merge the push with the main.
-* When committing, please leave a comment to says what was either added or changed on the code and to which file. This will help when merging.
-* When naming your variables, it would be preferable to use camel case (e.g. fileDatabaseCleaned) and have the name be more specific to the action taken and to the data it is taken on.
-* ABC: Always be committing
-* Please add comments on your scripts, particularly your pseudo-code. While good code shouldn't need that many comments, it should include comments to guide the reader.
-* As git handler, I will keep an eye on how many commits a group member's branch is behind the main. If it is a large amount, I'll reach out to the owner of the branch to pull and update from the main branch.
-* When creating a new branch, use the following format: <Username> Segment <Segment number>
 
 ## Resources Used
 - [Center for Disease Control: Heart Disease Facts](https://www.cdc.gov/heartdisease/facts.htm)
@@ -131,18 +120,18 @@ BMI, Cholesterol and Blood Pressure are likely going to be the main factors in p
 ### Preprocessing
 
 When creating a Machine Learning model data preprocessing is the next step in marking the process. We cleaned up the data by removing the outliers in a few of the categories. Finally, we separated the dataset into attributes and labels by splitting all but the cardio column into attributes, leaving cardio in the labels group.
-   
+
 ### Feature engineering and selection
 
 Fortunately, the data was already in a codified format, so encoding such as OneHotEncoder wasn't needed to make the data usable in the machine learning model. We then standardized the data using StandardScaler, to ensure that one feature doesn't skew the data.
 
-### Splitting, Training, and Testing Set 
+### Splitting, Training, and Testing Set
 
 Train_test_split was used to split data into training and testing sets at the default 75/25 split. This would allow us to have enough data to fit the model and have a decent sized test set. We may change the setting to be an 80/20 but that is still a consideration that can be made before the finalization of this project.
-  
+
 
 ### Model Selection: Benefits and Limitations
 
-For our Cardiovascular project, we chose the random forest model in order to obtain a higher level of accuracy and its ability to handle higher dimensionality. Random forest is also less susceptible to outliers and is indifferent to non-linear features. It also has a tendency to have low bias and moderate variance.      
+For our Cardiovascular project, we chose the random forest model in order to obtain a higher level of accuracy and its ability to handle higher dimensionality. Random forest is also less susceptible to outliers and is indifferent to non-linear features. It also has a tendency to have low bias and moderate variance.
 
-Some of the limitations of random forest include potential for overfitting, a moderate level of interpretability, and since this is a large dataset, a large amount of memory is utilized.  
+Some of the limitations of random forest include potential for overfitting, a moderate level of interpretability, and since this is a large dataset, a large amount of memory is utilized.

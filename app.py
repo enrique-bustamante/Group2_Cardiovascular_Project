@@ -2,7 +2,7 @@ from flask import Flask, render_template, request
 
 app = Flask(__name__)
 
-@app.route('/', methods=['GET', 'POST'])
+@app.route('/templates', methods=['GET', 'POST'])
 def index():
     bmi = ''
     if request.method == 'POST' and 'weight' in request.form:

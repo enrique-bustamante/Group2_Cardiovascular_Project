@@ -15,6 +15,7 @@ matplotlib = "*"
 scipy = "*"
 sqlalchemy = "*"
 awsebcli = "*"
+pickle-mixin = "*"
 
 [requires]
 python_version = "3.7"

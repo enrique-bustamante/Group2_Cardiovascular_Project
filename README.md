@@ -43,6 +43,33 @@ Information given by the patient cannot be trusted, which is subjective, listed 
 
 Difficult to take patients answers into account since they might not be accurate.
 
+## Outline of project
+
+### Database
+* Input raw dataset
+* Perform EDA and identify outliers to exclude
+* Create BMI category from height and weight calculation
+* Split dataset into a Medical and Behavior table
+* Join tables to have a full table with all attributes
+
+### Analysis
+* Pull data from database
+* Create charts for visualization
+* Push charts to Resources folder for access by other programs
+
+### Machine Learning
+* Pull data from database
+* Separate dataset into attributes and labels
+* Split data into training and testing sets
+* Run dataset through Random Forest model (finetune parameters with GridSearchCV)
+* Enable model to take an input array from index.html and outputting a prediction
+
+### Dashboard
+* Use index.html to set up framework for the dashboard
+* Pull images from the Resources folder to display on dashboard
+* Create an interactive component where user fills out information and that information is fed through ML model
+* The model returns the outcome and displays it on the dashboard
+
 ## Dashboard
 
 ![Dashboard](https://github.com/enrique-bustamante/Group2_Cardiovascular_Project/blob/main/Resources/dashboard.png)

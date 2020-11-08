@@ -1,8 +1,15 @@
-from flask import Flask, render_template, request
+import numpy as np
+from flask import Flask, request, jsonify, render_template
+import pickle
 
 app = Flask(__name__)
+#model = pickle.load(open('model.pkl', 'rb'))
 
-@app.route('/',methods=['POST','GET'])
+@app.route('/')
+def home():
+    return render_template('index.html')
+
+@app.route('/calculate',methods=['POST'])
 def calculate():
     bmi=''
     if request.method=='POST' and 'weight' in request.form and 'height' in request.form:

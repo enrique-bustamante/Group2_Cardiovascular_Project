@@ -73,7 +73,7 @@ trainingCardioAttributes, testingCardioAttributes, trainingCardioLabels, testing
 
 
 # Create a random forest classifier.
-rfModel = RandomForestClassifier(n_estimators=200, random_state=2)
+rfModel = RandomForestClassifier(n_estimators=250, random_state=2)
 
 
 # In[9]:

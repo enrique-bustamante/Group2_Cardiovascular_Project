@@ -99,7 +99,7 @@ accuracy_score(testingCardioLabels, cardioLabelPredictions)
 # In[12]:
 
 
-print(f\"Accuracy Score: {accuracy_score(testingCardioLabels, cardioLabelPredictions)}")
+print(f"Accuracy Score: {accuracy_score(testingCardioLabels, cardioLabelPredictions)}")
 
 
 # In[13]:
@@ -135,7 +135,12 @@ plt.show()
 
 
 # In[ ]:
+inputArray = np.array([41, 1, 180, 95, 135, 85, 1, 1, 25.2]).reshape(1,-1)
 
 
 
 
+# %%
+outputValue = rfModel.predict(inputArray)[0]
+outputValue
+# %%

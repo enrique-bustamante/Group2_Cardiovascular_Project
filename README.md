@@ -13,8 +13,6 @@ Using medically examined data we aim to answer the following questions:
 ## Resources
 The cardiovascular disease dataset is an open-source [dataset](https://www.kaggle.com/sulianova/cardiovascular-disease-dataset) that is found on Kaggle.
 
-## Database
-
 ## Dataset
 
 The dataset contains 70,000 records (34,979 who have cardiovascular disease and 35,021 who do not have cardiovascular disease) and contains 11 features (consisting of 4 demographic, 4 examination and 3 social history).
@@ -79,7 +77,7 @@ Difficult to take patients answers into account since they might not be accurate
 #### Front End:
 - HTML, CSS, JS, Bootstrap
 ### Back End:
-- Flask App, Heroku (Host)
+- Flask App, Amazon AWS (Host)
 
 ### Interactive Elements
 

@@ -47,16 +47,16 @@
           <h4>Result:</h4>
           
           <div class="main">
-            <form action="{{ url_for('calculate')}}"method="post">
-              Weight(lbs)
-          <input type="text" name="weight"><br>
-              Height(inches)
-          <input type="text" name="height"><br>
-          <button type="submit" value="submit">Calculate</button>
-          </form>
-          {%if bmi%}
-          <p>Your BMI is {{bmi}}</p>
-          {%endif%}
+              <form action="{{ url_for('calculate')}}"method="post">
+                Weight(lbs)
+                  <input type="text" name="weight"><br>
+                    Height(inches)
+                  <input type="text" name="height"><br>
+                    <button type="submit" value="submit">Calculate</button>
+              </form>
+            {%if bmi%}
+            <p>Your BMI is {{bmi}}</p>
+            {%endif%}
   
           </div>
           

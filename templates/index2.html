@@ -56,6 +56,10 @@
         <img src="../Resources/Systolic_Blood_Pressure_Breakdown.png" class = "img-responsive" alt="Systolic_Blood_Pressure_Breakdown" />
       </div>
     </div>
+
+    <br>
+    <br>
+
     <div class="row" id="blood-pressure-analysis">
       <div class="col-md-12">
         <div class="media">
@@ -76,6 +80,10 @@
         <img src="../Resources/BMI_Breakdown.png" class = "img-responsive" alt="BMI_Breakdown" />
       </div>
     </div>
+
+    <br>
+    <br>
+
     <div class="row" id="blood-pressure-analysis">
       <div class="col-md-6">
         <div class="media">
@@ -96,62 +104,42 @@
     </div>
     <br>
     <br>
-    <br>
-    <br>
-    <br>
-<!-- Chart -->
-<div class="container-fluid">
-  <div class="row">
-    <div class="col-md-9">
-      <form>
-        <p>Find Out If You're At Risk</p>
-        <ul class="list-group">
-          <li class="list-group-item">
-            <label for="age">Age</label>
-            <input type="text" placeholder="45" id="age" />
-          </li>
-          <li class="list-group-item">
-            <label for="gender">Gender</label>
-            <input type="text" placeholder="Female" id="gender" />
-          </li>
-          <li class="list-group-item">
-            <label for="height">Height</label>
-            <input type="text" placeholder="65" id="height" />
-          </li>
-          <li class="list-group-item">
-            <label for="weight">Weight</label>
-            <input type="text" placeholder="135" id="weight" />
-          </li>
-          <li class="list-group-item">
-            <label for="ap_hi">Systolic BP</label>
-            <input type="text" placeholder="135" id="ap_hi" />
-          </li>
-          <li class="list-group-item">
-            <label for="ap_lo">Diastolic BP</label>
-            <input type="text" placeholder="75" id="ap_lo" />
-          </li>
-          <li class="list-group-item">
-            <label for="cholesterol">Cholesterol</label>
-            <input type="text" placeholder="3" id="chol" />
-          </li>
-          <li class="list-group-item">
-            <label for="glucose">Glucose</label>
-            <input type="text" placeholder="1" id="gluc" />
-          </li>
-        </ul>
-        <button id="filter-btn" type="button" class="btn btn-default">Submit</button>
-      </form>
+    <div class="wrapper">
+      <div class="jumbotron text-center">
+          <h2>Find Out If You're At Risk</h2>
+      </div>
     </div>
-    <div class="col-md-3">
-      <table class="table table-striped">
-        <thead>
-          <tr>
-            <th>Cardio</th>
-          </tr>
-        </thead>
-        <tbody></tbody>
-      </table>
+    <br>
+    <br>
+<!-- Charts-->
+    <div class="row">
+      <div class="cold-md-6", style="border:double">
+        <form action="{{ url_for('calculate')}}"method="post">
+              Weight (lbs)
+                <input type="text" name="weight"><br>
+                  Height (inches)
+                <input type="text" name="height"><br>
+                  <button type="submit" value="submit">Calculate</button>
+        </form>
+          {%if bmi%}
+          <p>Your BMI is {{bmi}}</p>
+          {%endif%}
+      </div>
+      <div class="col-md-6" id="chart_facts", style="border: double;",>
+        <p>Age:</p>
+        <p>Gender:</p>
+        <p>BMI:</p>
+        <p>Systolic BP:</p>
+        <p>Diastolic BP:</p>
+        <p>Cholesterol:</p>
+        <p>Glucose:</p>
+        <p><a class="btn btn-danger btn-lg" href="/scrape" role="button" style="background-color: rgb(214, 214, 214)">Submit</a></p>
+        <h4>Result:</h4>
+      </div>
+      
     </div>
+  
+
   </div>
 </div>
 </body>

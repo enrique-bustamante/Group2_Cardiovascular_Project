@@ -16,17 +16,24 @@ import numpy as np
 import matplotlib.pyplot as plt
 from sklearn.model_selection import GridSearchCV
 from sklearn.metrics import confusion_matrix, classification_report
-from config import password
+from config import password, passwordAWS
 from sklearn.metrics import plot_confusion_matrix
 
 
 # In[2]:
-
+environmentSetting = 'production'
 
 # Starting database engine.
 databaseString = f"postgres://postgres:{password}@localhost:5432/CardioDatabase"
-databaseEngine = create_engine(databaseString)
-databaseConnection = databaseEngine.connect()   
+databaseStringAWS = f"postgres://postgres:{passwordAWS}@group2cardio.cl2wtm3wzyhx.us-east-2.rds.amazonaws.com"
+
+# %%
+if environmentSetting == 'dev':
+        databaseEngine = create_engine(databaseString)
+else:
+        databaseEngine = create_engine(databaseStringAWS)
+
+databaseConnection = databaseEngine.connect()
 
 
 # In[3]:
@@ -54,7 +61,7 @@ cardioDf.head(10)
 # In[6]:
 
 
-# Scale data 
+# Scale data
 scaler = StandardScaler()
 cardioAttributes = cardioDf.drop('cardio', axis=1)
 cardioLabels = cardioDf['cardio']
@@ -73,7 +80,7 @@ trainingCardioAttributes, testingCardioAttributes, trainingCardioLabels, testing
 
 
 # Create a random forest classifier.
-rfModel = RandomForestClassifier(n_estimators=250, random_state=2)
+rfModel = RandomForestClassifier(n_estimators=250, random_state=2, max_features=2)
 
 
 # In[9]:
@@ -123,7 +130,7 @@ print(report)
 titles_options = [ ("Normalized confusion matrix", 'true'),
            ("Confusion matrix, without normalization", None)]
 for title, normalize in titles_options:
-        disp = plot_confusion_matrix(rfModel, testingCardioAttributes, testingCardioLabels, 
+        disp = plot_confusion_matrix(rfModel, testingCardioAttributes, testingCardioLabels,
                                 display_labels=cardioLabels,
                                  cmap=plt.cm.Blues,
                                  normalize=normalize)
@@ -135,7 +142,7 @@ plt.show()
 
 
 # In[ ]:
-inputArray = np.array([41, 1, 180, 95, 135, 85, 1, 1, 25.2]).reshape(1,-1)
+inputArray = np.array([25, 1, 180, 85, 110, 70, 1, 1, 18.0]).reshape(1,-1)
 
 
 

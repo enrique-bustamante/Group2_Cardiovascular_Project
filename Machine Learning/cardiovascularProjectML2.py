@@ -142,12 +142,15 @@ plt.show()
 
 
 # In[ ]:
-inputArray = np.array([25, 1, 180, 85, 110, 70, 1, 1, 18.0]).reshape(1,-1)
-
-
+inputArray = pd.Series([61, 1, 157, 93, 130, 80, 3, 1, 38.0])
+inputArrayScaled = scaler.transform(inputArray.values.reshape(1,9))
 
 
 # %%
-outputValue = rfModel.predict(inputArray)[0]
-outputValue
+outputValue = rfModel.predict(inputArrayScaled)
+outputValue[0]
+
+# %%
+corr = cardioDf.corr()
+corr
 # %%

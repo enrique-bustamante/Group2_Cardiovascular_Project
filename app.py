@@ -15,7 +15,7 @@ def calculate():
     if request.method=='POST' and 'weight' in request.form and 'height' in request.form:
         Weight=float(request.form.get('weight'))
         Height=float(request.form.get('height'))
-        bmi=round(((Weight/(Height**2))*703),2)
+        bmi=round((Weight/(Height**2))*703)
     return render_template("index2.html",bmi=bmi)
 
 if __name__ == '__main__':

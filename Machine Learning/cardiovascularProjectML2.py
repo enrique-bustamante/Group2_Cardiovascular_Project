@@ -17,6 +17,7 @@ import matplotlib.pyplot as plt
 from sklearn.model_selection import GridSearchCV
 from sklearn.metrics import confusion_matrix, classification_report
 from config import password, passwordAWS
+import pickle
 from sklearn.metrics import plot_confusion_matrix
 
 
@@ -54,7 +55,7 @@ cardioDf.dtypes
 # In[5]:
 
 
-cardioDf = cardioDf.drop(['smoke', 'alco', 'active'], axis=1)
+cardioDf = cardioDf.drop(['smoke', 'alco', 'active', 'weight', 'height'], axis=1)
 cardioDf.head(10)
 
 
@@ -136,21 +137,22 @@ for title, normalize in titles_options:
                                  normalize=normalize)
         disp.ax_.set_title(title)
         #plt.savefig('../Resources/confusion_matrix.png')
-        print(title)
-        print(disp.confusion_matrix)
+print(title)
+print(disp.confusion_matrix)
 plt.show()
 
 
 # In[ ]:
-inputArray = pd.Series([61, 1, 157, 93, 130, 80, 3, 1, 38.0])
-inputArrayScaled = scaler.transform(inputArray.values.reshape(1,9))
+#inputArray = pd.Series([61, 1, 157, 93, 130, 80, 3, 1, 38.0])
+#inputArrayScaled = scaler.transform(inputArray.values.reshape(1,9))
 
 
 # %%
-outputValue = rfModel.predict(inputArrayScaled)
-outputValue[0]
+#outputValue = rfModel.predict(inputArrayScaled)
+#outputValue[0]
+
 
 # %%
-corr = cardioDf.corr()
-corr
-# %%
+pickle.dump(rfModel, open('cardioPrediction.pkl','wb'))
+pickle.dump(scaler, open('scaler.pkl', 'wb'))
+cardioPrediction = pickle.load(open('cardioPrediction.pkl','rb'))

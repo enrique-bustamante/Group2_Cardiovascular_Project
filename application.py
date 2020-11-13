@@ -3,7 +3,8 @@ from flask import Flask, request, jsonify, render_template
 import pickle
 from flask_restful import Resource, Api
 
-app = Flask(__name__)
+application = app = Flask(__name__)
+api=Api(app)
 cardioPrediction = pickle.load(open('cardioPrediction.pkl', 'rb'))
 scaler = pickle.load(open('scaler.pkl', 'rb'))
 

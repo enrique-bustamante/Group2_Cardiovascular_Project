@@ -116,24 +116,30 @@
     <br>
 <!-- Charts-->
 
-      <div>
-        <form action="{{ url_for('calculate')}}" method="post">
-          <label for="weight">Weight (lbs)</label>
-          <input type="text" id="weight" name="weight">
+      <div id='middle'>
+     
+          <form action="{{ url_for('calculate')}}" method="post">
+            <label for="weight">Weight (lbs)</label>
+            <input type="text" id="weight" name="weight">
 
-          <label for="height">Height (inches)</label>
-          <input type="text" id="height" name="height">
-        
-          <button type="submit" value="submit">Calculate</button>
-        </form>
-          {%if bmi%}
-          <p>Your BMI is {{bmi}}</p>
-          {%endif%}
+            <label for="height">Height (inches)</label>
+            <input type="text" id="height" name="height">
+            
+            <button type="submit" value="submit">Calculate</button>
+          </form>
+              {%if bmi%}
+              <p>Your BMI is {{bmi}}</p>
+              {%endif%}
+              {% if scroll %}
+              <script>
+                document.getElementById('{{ scroll }}').scrollIntoView();
+              </script>
+              {% endif %}
       </div>
       <br>
       <br>
-      <div>
-        <form action="{{ url_for('machinelearning')}}" method="post">
+      <div id='bottom'>
+        <form action="{{ url_for('machinelearning')}}" method="post" href = 'javascript:void();'>
           <label for="age">Age</label>
           <input type="text" id="age" name="age">
       
@@ -170,10 +176,15 @@
         </form>
         <br>
         {%if outputValue == 1 %}
-        <p>You are potentially at risk</p>
+        <p>You are potentially at risk for Cardiovascular Disease</p>
         {%elif outputValue == 0 %}
-        <p>You may not be at risk</p>
+        <p>You may not be at risk for Cardiovascular Disease</p>
         {%endif%}
+        {% if scroll %}
+        <script>
+          document.getElementById('{{ scroll }}').scrollIntoView();
+        </script>
+        {% endif %}
       </div>
       <br>
       <br>

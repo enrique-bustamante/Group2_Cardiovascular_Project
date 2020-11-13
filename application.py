@@ -1,6 +1,7 @@
 import numpy as np
 from flask import Flask, request, jsonify, render_template
 import pickle
+from flask_restful import Resource, Api
 
 app = Flask(__name__)
 cardioPrediction = pickle.load(open('cardioPrediction.pkl', 'rb'))

@@ -133,14 +133,14 @@
       <br>
       <br>
       <div>
-        <form action="/action_page.php">
+        <form action="{{ url_for('machinelearning')}}" method="post">
           <label for="age">Age</label>
           <input type="text" id="age" name="age">
       
           <label for="gender">Gender</label>
           <select id="gender" name="gender">
-            <option value="male">Male</option>
-            <option value="female">Female</option>
+            <option value=1>Male</option>
+            <option value=2>Female</option>
           </select>
 
           <label for="bmi">BMI</label>
@@ -154,20 +154,27 @@
 
           <label for="cholesterol">Cholesterol</label>
           <select id="chol" name="chol">
-            <option value="1">Normal</option>
-            <option value="2">Above Normal</option>
-            <option value="3">Well Above Normal</option>
+            <option value=1>Normal</option>
+            <option value=2>Above Normal</option>
+            <option value=3>Well Above Normal</option>
           </select>
 
           <label for="glucose">Glucose</label>
           <select id="gluc" name="gluc">
-            <option value="1">Normal</option>
-            <option value="2">Above Normal</option>
-            <option value="3">Well Above Normal</option>
+            <option value=1>Normal</option>
+            <option value=2>Above Normal</option>
+            <option value=3>Well Above Normal</option>
           </select>
 
           <input type="submit" value="Submit">
         </form>
+        <br>
+        {{answer}}
+        {%if answer == 0 %}
+        <p>You are potentially at risk</p>
+        {%elif answer == 1 %}
+        <p>You are not at risk</p>
+        {%endif%}
       </div>
       <br>
       <br>

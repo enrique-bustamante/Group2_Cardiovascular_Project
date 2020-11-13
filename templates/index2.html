@@ -169,11 +169,10 @@
           <input type="submit" value="Submit">
         </form>
         <br>
-        {{answer}}
-        {%if answer == 0 %}
+        {%if outputValue == 1 %}
         <p>You are potentially at risk</p>
-        {%elif answer == 1 %}
-        <p>You are not at risk</p>
+        {%elif outputValue == 0 %}
+        <p>You may not be at risk</p>
         {%endif%}
       </div>
       <br>

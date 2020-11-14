@@ -39,7 +39,7 @@ Information given by the patient cannot be trusted, which is subjective, listed 
 - Alcohol intake
 - Physical activity
 
-Difficult to take patients answers into account since they might not be accurate.
+Difficult to take patients answers into account since they might not be accurate due to bias. We all like to think that we do a little more exercise than what we really report and individuals might be embarrassed to admit how much they smoke and/or drink.
 
 ## Outline of project
 
@@ -88,6 +88,7 @@ Click [here](https://docs.google.com/presentation/d/1CLlYEob1KDY201-xxJQNkHgQrru
 ## Resources Used
 - [Center for Disease Control: Heart Disease Facts](https://www.cdc.gov/heartdisease/facts.htm)
 - [Heart Disease: Facts, Statistics, and You](https://www.healthline.com/health/heart-disease/statistics)
+- [Mayo Clinic - Heart Disease](https://www.mayoclinic.org/diseases-conditions/heart-disease/symptoms-causes/syc-20353118)
 
 ### Team Members: Enrique Bustamante, Sara St. Jean, Ali Merchant, Anna Shvilpe, Ricardo Vasquez, Victor Rodriguez IV
 

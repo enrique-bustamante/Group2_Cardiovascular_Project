@@ -39,7 +39,7 @@ Information given by the patient cannot be trusted, which is subjective, listed 
 - Alcohol intake
 - Physical activity
 
-Difficult to take patients answers into account since they might not be accurate.
+Difficult to take patients answers into account since they might not be accurate due to bias. We all like to think that we do a little more exercise than what we really report and individuals might be embarrassed to admit how much they smoke and/or drink.
 
 ## Outline of project
 

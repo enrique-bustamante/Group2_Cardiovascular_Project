@@ -88,6 +88,7 @@ Click [here](https://docs.google.com/presentation/d/1CLlYEob1KDY201-xxJQNkHgQrru
 ## Resources Used
 - [Center for Disease Control: Heart Disease Facts](https://www.cdc.gov/heartdisease/facts.htm)
 - [Heart Disease: Facts, Statistics, and You](https://www.healthline.com/health/heart-disease/statistics)
+- [Mayo Clinic - Heart Disease](https://www.mayoclinic.org/diseases-conditions/heart-disease/symptoms-causes/syc-20353118)
 
 ### Team Members: Enrique Bustamante, Sara St. Jean, Ali Merchant, Anna Shvilpe, Ricardo Vasquez, Victor Rodriguez IV
 

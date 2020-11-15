@@ -67,6 +67,7 @@ Difficult to take patients answers into account since they might not be accurate
 * Pull images from the Resources folder to display on dashboard
 * Create an interactive component where user fills out information and that information is fed through ML model
 * The model returns the outcome and displays it on the dashboard
+![Flowchart of Outline](https://github.com/enrique-bustamante/Group2_Cardiovascular_Project/blob/main/Resources/Group%202%20Cardiovascular%20Swimlane%20chart.png)
 
 ## Dashboard
 
@@ -99,7 +100,7 @@ After exploring all the data visually and numerically we can observe multiple tr
  **BMI**
 When we binned the BMI data, we observed that most of the population in our data is overweight to obese BMI levels. Later in the data analysis we see that BMI can indeed be a leading indicator, however, given the population bias of the dataset we need to remember that this can be skewing our results.
 
-![Chart 1 - BMI Breakdown](https://github.com/enrique-bustamante/Group2_Cardiovascular_Project/blob/main/Resources/BMI_Breakdown.png)
+![Chart 1 - BMI Breakdown](https://github.com/enrique-bustamante/Group2_Cardiovascular_Project/blob/main/static/BMI_Breakdown.png)
 
  **Age**
 
@@ -109,16 +110,16 @@ We looked at the age, and there is no data for age below 36, which may not be th
 
  When looking at the blood pressure records, 40K of the data points fall strictly into the normal range for AP high and AP Low (as defined dy the chart). 1/3 of that population had a cardio event(~14K). However, it's hard to reveal if blood pressure is a predictor based on that alone. When we look at data outside of normal ranges there is a high relationship between being outside of normal range and having a cardio event. It is inherently hard to bin into strict bounds because some people may have high upper but normal lower or vice versa. Therefore, We tested different bounds and observed consistent results, although we have a small population of people with low blood pressure.
 
- ![Chart 2 - Diastolic Blood Pressure Breakdown](https://github.com/enrique-bustamante/Group2_Cardiovascular_Project/blob/main/Resources/Diastolic_Blood_Pressure_Breakdown.png)
+ ![Chart 2 - Diastolic Blood Pressure Breakdown](https://github.com/enrique-bustamante/Group2_Cardiovascular_Project/blob/main/static/Diastolic_Blood_Pressure_Breakdown.png)
 
- ![Chart 3 - Systolic Blood Pressure Breakdown](https://github.com/enrique-bustamante/Group2_Cardiovascular_Project/blob/main/Resources/Systolic_Blood_Pressure_Breakdown.png)
+ ![Chart 3 - Systolic Blood Pressure Breakdown](https://github.com/enrique-bustamante/Group2_Cardiovascular_Project/blob/main/static/Systolic_Blood_Pressure_Breakdown.png)
 
 
 **Cholesterol**
 
  Cholesterol 3 is a predictor, can be seen from box plot and data analysis. When we divided the data into people who had cardio and non cardio events and then further divide those samples into cholesterol levels we observed a higher percentage of cholesterol 2 & 3 in the cardio events.
 
- ![Chart 4 - Cholesterol Distribution](https://github.com/enrique-bustamante/Group2_Cardiovascular_Project/blob/main/Resources/Cholesterol_Distribution.png)
+ ![Chart 4 - Cholesterol Distribution](https://github.com/enrique-bustamante/Group2_Cardiovascular_Project/blob/main/static/Cholesterol_Distribution.png)
 
  **Glucose**
 

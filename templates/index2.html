@@ -189,7 +189,31 @@
       <br>
       <br>
       <br>
-      <br>
+    <br>
+    <div class="wrapper">
+      <div class="jumbotron text-center">
+          <h2>Machine Learning Report and Results</h2>
+      </div>
+    </div>
+    <br>
+    <br>
+<!-- Machine Learning Report-->
+    <div class="row" id="machine-learning-chart" >
+      <div class="col-md-6" >
+        <h2>Confusion Matrix</h2>
+        <img src="../static/confusion_matrix.png" class = "img-responsive" alt="Confusion_Matrix"/>  
+      </div>
+      <div class="col-md-6">
+        <p><h5>Engineering and Selection</h5></p>
+        <p>Fortunately, the data was already in a codified format, so encoding such as OneHotEncoder wasn't needed to make the data usable in the machine learning model. We then standardized the data using StandardScaler, to ensure that one feature doesn't skew the data.</p>
+        <p><h5>Splitting, Training and Testing Set</h5></p>
+        <p>Train_test_split was used to split data into training and testing sets at the default 75/25 split. This would allow us to have enough data to fit the model and have a decent sized test set.</p>
+        <p><h5>Model Selection: Benefits and Limitations</h5></p>
+        <p>We chose the random forest model in order to obtain a higher level of accuracy and its ability to handle higher dimensionality. Random forest is also less susceptible to outliers and is indifferent to non-linear features. It also has a tendency to have low bias and moderate variance. Some of the limitations of random forest include potential for overfitting, a moderate level of interpretability, and since this is a large dataset, a large amount of memory is utilized.</p>
+      </div>
+    </div>
+    <br>
+    <br>
 </div>
 </body>
 </html>

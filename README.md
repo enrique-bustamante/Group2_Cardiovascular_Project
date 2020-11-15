@@ -67,6 +67,7 @@ Difficult to take patients answers into account since they might not be accurate
 * Pull images from the Resources folder to display on dashboard
 * Create an interactive component where user fills out information and that information is fed through ML model
 * The model returns the outcome and displays it on the dashboard
+
 ![Flowchart of Outline](https://github.com/enrique-bustamante/Group2_Cardiovascular_Project/blob/main/Resources/Group%202%20Cardiovascular%20Swimlane%20chart.png)
 
 ## Dashboard

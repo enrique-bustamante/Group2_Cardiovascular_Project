@@ -18,8 +18,8 @@ group of factors have the largest impact on a Cardiovascular event? - From the
 5-7 factors, can we narrow it down with PCA? - Can we create a model that
 would predict a Cardiovascular event?
 
-## Resources The cardiovascular disease dataset is an open-source
-[dataset](https://www.kaggle.com/sulianova/cardiovascular-disease-dataset)
+## Resources 
+The cardiovascular disease dataset is an open-source [dataset](https://www.kaggle.com/sulianova/cardiovascular-disease-dataset)
 that is found on Kaggle.
 
 ## Dataset
@@ -41,7 +41,9 @@ The 11 features above can assist in helping us predict a cardiovascular event.
 Information given by the patient cannot be trusted, which is subjective,
 listed below:
 
-- Smoking Alcohol intake Physical activity
+- Smoking 
+- Alcohol intake 
+- Physical activity
 
 Difficult to take patients answers into account since they might not be
 accurate due to bias. We all like to think that we do a little more exercise
@@ -50,7 +52,8 @@ much they smoke and/or drink.
 
 ## Outline of project
 
-#### Database * Input raw dataset * Perform EDA and identify outliers to
+#### Database * Input raw dataset * 
+Perform EDA and identify outliers to
 exclude * Create BMI category from height and weight calculation * Split
 dataset into a Medical and Behavior table * Join tables to have a full table
 with all attributes
@@ -58,13 +61,15 @@ with all attributes
 #### Analysis * Pull data from database * Create charts for visualization *
 Push charts to Resources folder for access by other programs
 
-#### Machine Learning * Pull data from database * Separate dataset into
+#### Machine Learning * Pull data from database * 
+Separate dataset into
 attributes and labels * Split data into training and testing sets * Run
 dataset through Random Forest model (finetune parameters with GridSearchCV) *
 Enable model to take an input array from index.html and outputting a
 prediction
 
-#### Dashboard * Use index.html to set up framework for the dashboard * Pull
+#### Dashboard * Use index.html to set up framework for the dashboard * 
+Pull
 images from the Resources folder to display on dashboard * Create an
 interactive component where user fills out information and that information is
 fed through ML model * The model returns the outcome and displays it on the
@@ -86,8 +91,8 @@ AWS (Host)
 BMI - Added input fields and submit button to see if the user might have
 cardiovascular disease or not
 
-### GoogleSlides Click
-[here](https://docs.google.com/presentation/d/1CLlYEob1KDY201-xxJQNkHgQrruSIw2wHYbGwUDNzWc/edit?usp=sharing)
+### GoogleSlides 
+Click [here](https://docs.google.com/presentation/d/1CLlYEob1KDY201-xxJQNkHgQrruSIw2wHYbGwUDNzWc/edit?usp=sharing)
 to access the GoogleSlides presentation.
 
 ## Cardio Data Analysis
@@ -251,11 +256,9 @@ behavioral components and yieled an accuracy of 70.86%.
 
 
 ## Resources Used - [Center for Disease Control: Heart Disease
-Facts](https://www.cdc.gov/heartdisease/facts.htm) - [Heart Disease: Facts,
-Statistics, and
-You](https://www.healthline.com/health/heart-disease/statistics) - [Mayo
-Clinic - Heart
-Disease](https://www.mayoclinic.org/diseases-conditions/heart-disease/symptoms-causes/syc-20353118)
+- [Heart Disease Facts](https://www.cdc.gov/heartdisease/facts.htm) 
+- [Heart Disease: Facts, Statistics, and You](https://www.healthline.com/health/heart-disease/statistics) 
+- [Mayo Clinic - HeartDisease](https://www.mayoclinic.org/diseases-conditions/heart-disease/symptoms-causes/syc-20353118)
 
 ### Team Members: Enrique Bustamante, Sara St. Jean, Ali Merchant, Anna
 ### Shvilpe, Ricardo Vasquez, Victor Rodriguez IV

@@ -84,14 +84,6 @@ Difficult to take patients answers into account since they might not be accurate
 ### GoogleSlides
 Click [here](https://docs.google.com/presentation/d/1CLlYEob1KDY201-xxJQNkHgQrruSIw2wHYbGwUDNzWc/edit?usp=sharing) to access the GoogleSlides presentation.
 
-
-## Resources Used
-- [Center for Disease Control: Heart Disease Facts](https://www.cdc.gov/heartdisease/facts.htm)
-- [Heart Disease: Facts, Statistics, and You](https://www.healthline.com/health/heart-disease/statistics)
-- [Mayo Clinic - Heart Disease](https://www.mayoclinic.org/diseases-conditions/heart-disease/symptoms-causes/syc-20353118)
-
-### Team Members: Enrique Bustamante, Sara St. Jean, Ali Merchant, Anna Shvilpe, Ricardo Vasquez, Victor Rodriguez IV
-
 ## Cardio Data Analysis
 
 After exploring all the data visually and numerically we can observe multiple trends. The goal in our analysis was first to reveal trends and understand the distribution of the data by histogram of various parameters such as BMI, cholesterol, age, blood pressure, habits, glucose against main predictor/label (cardio event).
@@ -161,3 +153,10 @@ Train_test_split was used to split data into training and testing sets at the de
 For our Cardiovascular project, we chose the random forest model in order to obtain a higher level of accuracy and its ability to handle higher dimensionality. Random forest is also less susceptible to outliers and is indifferent to non-linear features. It also has a tendency to have low bias and moderate variance.
 
 Some of the limitations of random forest include potential for overfitting, a moderate level of interpretability, and since this is a large dataset, a large amount of memory is utilized.
+
+## Resources Used
+- [Center for Disease Control: Heart Disease Facts](https://www.cdc.gov/heartdisease/facts.htm)
+- [Heart Disease: Facts, Statistics, and You](https://www.healthline.com/health/heart-disease/statistics)
+- [Mayo Clinic - Heart Disease](https://www.mayoclinic.org/diseases-conditions/heart-disease/symptoms-causes/syc-20353118)
+
+### Team Members: Enrique Bustamante, Sara St. Jean, Ali Merchant, Anna Shvilpe, Ricardo Vasquez, Victor Rodriguez IV

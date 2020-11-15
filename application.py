@@ -1,27 +1,25 @@
 import numpy as np
 from flask import Flask, request, jsonify, render_template
 import pickle
-from flask_restful import Resource, Api
 
-application = app = Flask(__name__)
-api=Api(app)
-cardioPrediction = pickle.load(open('cardioPrediction.pkl', 'rb'))
-scaler = pickle.load(open('scaler.pkl', 'rb'))
+application = Flask(__name__)
+cardioPrediction = pickle.load(open('Machine Learning/cardioPrediction.pkl', 'rb'))
+scaler = pickle.load(open('Machine Learning/scaler.pkl', 'rb'))
 
-@app.route('/')
+@application.route('/')
 def home():
     return render_template('index2.html')
 
-@app.route('/calculate',methods=['POST'])
+@application.route('/calculate',methods=['POST'])
 def calculate():
     bmi=''
     if request.method=='POST' and 'weight' in request.form and 'height' in request.form:
         Weight=float(request.form.get('weight'))
         Height=float(request.form.get('height'))
-        bmi=round(((Weight/(Height**2))*703),2)
-    return render_template("index2.html",bmi=bmi)
+        bmi=round(((Weight/(Height**2))*703),1)
+    return render_template("index2.html",bmi=bmi, scroll ='middle')
 
-@app.route('/machinelearning',methods=['POST'])
+@application.route('/machinelearning',methods=['POST'])
 def machinelearning():
     inputArray=[]
     if request.method=='POST' and 'age' in request.form and 'gender' in request.form and 'bmi' in request.form and 'ap_hi' in request.form and 'ap_lo' in request.form and 'chol' in request.form and 'gluc' in request.form:
@@ -32,13 +30,13 @@ def machinelearning():
         Diastolic=float(request.form.get('ap_lo'))
         Cholesterol=float(request.form.get('chol'))
         Glucose=float(request.form.get('gluc'))
-#Creating an Array 
+#Creating an Array
         #answer=Age+Gender+BMI+Systolic+Diastolic+Cholesterol+Glucose
         inputArray.append([Age,Gender,Systolic,Diastolic,Cholesterol,Glucose, BMI])
         inputScaler = scaler.transform(inputArray)
         outputValue = cardioPrediction.predict(inputScaler)
         outputValue = outputValue[0]
-    return render_template("index2.html",outputValue=outputValue)
+    return render_template("index2.html",outputValue=outputValue, scroll='bottom')
 
 if __name__ == '__main__':
-    app.run()
+    application.run()

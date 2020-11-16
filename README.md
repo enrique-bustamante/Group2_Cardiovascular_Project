@@ -18,7 +18,7 @@ group of factors have the largest impact on a Cardiovascular event? - From the
 5-7 factors, can we narrow it down with PCA? - Can we create a model that
 would predict a Cardiovascular event?
 
-## Resources 
+## Resources
 The cardiovascular disease dataset is an open-source [dataset](https://www.kaggle.com/sulianova/cardiovascular-disease-dataset)
 that is found on Kaggle.
 
@@ -41,8 +41,8 @@ The 11 features above can assist in helping us predict a cardiovascular event.
 Information given by the patient cannot be trusted, which is subjective,
 listed below:
 
-- Smoking 
-- Alcohol intake 
+- Smoking
+- Alcohol intake
 - Physical activity
 
 Difficult to take patients answers into account since they might not be
@@ -52,7 +52,7 @@ much they smoke and/or drink.
 
 ## Outline of project
 
-#### Database * Input raw dataset * 
+#### Database * Input raw dataset *
 Perform EDA and identify outliers to
 exclude * Create BMI category from height and weight calculation * Split
 dataset into a Medical and Behavior table * Join tables to have a full table
@@ -61,22 +61,21 @@ with all attributes
 #### Analysis * Pull data from database * Create charts for visualization *
 Push charts to Resources folder for access by other programs
 
-#### Machine Learning * Pull data from database * 
+#### Machine Learning * Pull data from database *
 Separate dataset into
 attributes and labels * Split data into training and testing sets * Run
 dataset through Random Forest model (finetune parameters with GridSearchCV) *
 Enable model to take an input array from index.html and outputting a
 prediction
 
-#### Dashboard * Use index.html to set up framework for the dashboard * 
+#### Dashboard * Use index.html to set up framework for the dashboard *
 Pull
 images from the Resources folder to display on dashboard * Create an
 interactive component where user fills out information and that information is
 fed through ML model * The model returns the outcome and displays it on the
 dashboard
 
-![Flowchart of
-![Outline](https://github.com/enrique-bustamante/Group2_Cardiovascular_Project/blob/main/Resources/Group%202%20Cardiovascular%20Swimlane%20chart.png)
+![Flowchart of Outline](https://github.com/enrique-bustamante/Group2_Cardiovascular_Project/blob/main/Resources/Group%202%20Cardiovascular%20Swimlane%20chart.png)
 
 ## Dashboard
 
@@ -91,7 +90,7 @@ AWS (Host)
 BMI - Added input fields and submit button to see if the user might have
 cardiovascular disease or not
 
-### GoogleSlides 
+### GoogleSlides
 Click [here](https://docs.google.com/presentation/d/1CLlYEob1KDY201-xxJQNkHgQrruSIw2wHYbGwUDNzWc/edit?usp=sharing)
 to access the GoogleSlides presentation.
 
@@ -108,8 +107,7 @@ in our data is overweight to obese BMI levels. Later in the data analysis we
 see that BMI can indeed be a leading indicator, however, given the population
 bias of the dataset we need to remember that this can be skewing our results.
 
-![Chart 1 - BMI
-![Breakdown](https://github.com/enrique-bustamante/Group2_Cardiovascular_Project/blob/main/static/BMI_Breakdown.png)
+![Chart 1 - BMI Breakdown](https://github.com/enrique-bustamante/Group2_Cardiovascular_Project/blob/main/static/BMI_Breakdown.png)
 
  **Age**
 
@@ -132,11 +130,9 @@ those at the older end.
  consistent results, although we have a small population of people with low
  blood pressure.
 
- ![Chart 2 - Diastolic Blood Pressure
- ![Breakdown](https://github.com/enrique-bustamante/Group2_Cardiovascular_Project/blob/main/static/Diastolic_Blood_Pressure_Breakdown.png)
+ ![Chart 2 - Diastolic Blood Pressure Breakdown](https://github.com/enrique-bustamante/Group2_Cardiovascular_Project/blob/main/static/Diastolic_Blood_Pressure_Breakdown.png)
 
- ![Chart 3 - Systolic Blood Pressure
- ![Breakdown](https://github.com/enrique-bustamante/Group2_Cardiovascular_Project/blob/main/static/Systolic_Blood_Pressure_Breakdown.png)
+ ![Chart 3 - Systolic Blood Pressure Breakdown](https://github.com/enrique-bustamante/Group2_Cardiovascular_Project/blob/main/static/Systolic_Blood_Pressure_Breakdown.png)
 
 
 **Cholesterol**
@@ -254,8 +250,8 @@ behavioral components and yieled an accuracy of 70.86%.
 
 
 ## Resources Used - [Center for Disease Control: Heart Disease
-- [Heart Disease Facts](https://www.cdc.gov/heartdisease/facts.htm) 
-- [Heart Disease: Facts, Statistics, and You](https://www.healthline.com/health/heart-disease/statistics) 
+- [Heart Disease Facts](https://www.cdc.gov/heartdisease/facts.htm)
+- [Heart Disease: Facts, Statistics, and You](https://www.healthline.com/health/heart-disease/statistics)
 - [Mayo Clinic - HeartDisease](https://www.mayoclinic.org/diseases-conditions/heart-disease/symptoms-causes/syc-20353118)
 
 ### Team Members: Enrique Bustamante, Sara St. Jean, Ali Merchant, Anna

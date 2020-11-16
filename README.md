@@ -73,12 +73,12 @@ exclude
 * Enable model to take an input array from index.html and outputting a
 prediction
 
-#### Dashboard * Use index.html to set up framework for the dashboard *
-Pull
-images from the Resources folder to display on dashboard * Create an
-interactive component where user fills out information and that information is
-fed through ML model * The model returns the outcome and displays it on the
-dashboard
+#### Dashboard
+* Use index.html to set up framework for the dashboard
+* Pull images from the Resources folder to display on dashboard
+* Create an interactive component where user fills out information and that information is
+fed through ML model
+* The model returns the outcome and displays it on the dashboard
 
 ![Flowchart of Outline](https://github.com/enrique-bustamante/Group2_Cardiovascular_Project/blob/main/Resources/Group%202%20Cardiovascular%20Swimlane%20chart.png)
 

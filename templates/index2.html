@@ -176,9 +176,13 @@
         </form>
         <br>
         {%if outputValue == 1 %}
-        <p>You are potentially at risk for Cardiovascular Disease</p>
+        <p>You are potentially at risk for Cardiovascular Disease <br>
+          Please consider visiting your cardiologist
+        </p>
         {%elif outputValue == 0 %}
-        <p>You may not be at risk for Cardiovascular Disease</p>
+        <p>You may not be at risk for Cardiovascular Disease <br>
+          Continue with your healthy choices
+        </p>
         {%endif%}
         {% if scroll %}
         <script>

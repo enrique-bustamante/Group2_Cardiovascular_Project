@@ -18,6 +18,10 @@ group of factors have the largest impact on a Cardiovascular event? - From the
 5-7 factors, can we narrow it down with PCA? - Can we create a model that
 would predict a Cardiovascular event?
 
+## Link to video
+
+[Group 2 Video Demonstration](https://drive.google.com/file/d/1bPojAP_Pgbk2DqdMQK33KtKmLkLSnYTX/view?usp=sharing)
+
 ## Resources
 The cardiovascular disease dataset is an open-source [dataset](https://www.kaggle.com/sulianova/cardiovascular-disease-dataset)
 that is found on Kaggle.

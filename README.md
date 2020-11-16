@@ -52,20 +52,25 @@ much they smoke and/or drink.
 
 ## Outline of project
 
-#### Database * Input raw dataset *
-Perform EDA and identify outliers to
-exclude * Create BMI category from height and weight calculation * Split
-dataset into a Medical and Behavior table * Join tables to have a full table
-with all attributes
+#### Database
+* Input raw dataset
+* Perform EDA and identify outliers to
+exclude
+* Create BMI category from height and weight calculation
+* Split dataset into a Medical and Behavior table
+* Join tables to have a full table with all attributes
 
-#### Analysis * Pull data from database * Create charts for visualization *
-Push charts to Resources folder for access by other programs
+#### Analysis
+* Pull data from database
+* Create charts for visualization
+* Push charts to Resources folder for access by other programs
 
-#### Machine Learning * Pull data from database *
-Separate dataset into
-attributes and labels * Split data into training and testing sets * Run
-dataset through Random Forest model (finetune parameters with GridSearchCV) *
-Enable model to take an input array from index.html and outputting a
+#### Machine Learning
+* Pull data from database
+* Separate dataset into attributes and labels
+* Split data into training and testing sets
+* Run dataset through Random Forest model (finetune parameters with GridSearchCV)
+* Enable model to take an input array from index.html and outputting a
 prediction
 
 #### Dashboard * Use index.html to set up framework for the dashboard *

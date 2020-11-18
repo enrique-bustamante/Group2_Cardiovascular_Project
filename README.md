@@ -151,8 +151,7 @@ those at the older end.
  then further divide those samples into cholesterol levels we observed a
  higher percentage of cholesterol 2 & 3 in the cardio events.
 
- ![Chart 4 - Cholesterol
- ![Distribution](https://github.com/enrique-bustamante/Group2_Cardiovascular_Project/blob/main/static/Cholesterol_Distribution.png)
+ ![Chart 4 - Cholesterol Distribution](https://github.com/enrique-bustamante/Group2_Cardiovascular_Project/blob/main/static/Cholesterol_Distribution.png)
 
  **Glucose**
 
@@ -188,7 +187,8 @@ Based on the above, we have to question the reliability of the habits data in
 our dataset, particularly if it is self-reported. We may need to potentially
 consider excluding it for Machine Learning if our model does not score high.
 
-## Preliminary Conclusions BMI, Cholesterol and Blood Pressure are likely
+## Preliminary Conclusions
+BMI, Cholesterol and Blood Pressure are likely
 going to be the main factors in predicting the cardio outcome successfully.
 
 ## Machine Learning
@@ -258,8 +258,8 @@ max features, with standard scaling, but no PCA. We also did remove the
 behavioral components and yieled an accuracy of 70.86%.
 
 
-## Resources Used - [Center for Disease Control: Heart Disease
-- [Heart Disease Facts](https://www.cdc.gov/heartdisease/facts.htm)
+## Resources Used
+- [Center for Disease Control: Heart Disease](https://www.cdc.gov/heartdisease/facts.htm)
 - [Heart Disease: Facts, Statistics, and You](https://www.healthline.com/health/heart-disease/statistics)
 - [Mayo Clinic - HeartDisease](https://www.mayoclinic.org/diseases-conditions/heart-disease/symptoms-causes/syc-20353118)
 

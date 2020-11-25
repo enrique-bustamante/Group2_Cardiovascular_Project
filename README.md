@@ -212,9 +212,7 @@ feature doesn't skew the data.
 
 Train_test_split was used to split data into training and testing sets at the
 default 75/25 split. This would allow us to have enough data to fit the model
-and have a decent sized test set. We may change the setting to be an 80/20 but
-that is still a consideration that can be made before the finalization of this
-project.
+and have a decent sized test set.
 
 
 ### Model Selection: Benefits and Limitations

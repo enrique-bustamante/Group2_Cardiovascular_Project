@@ -67,6 +67,8 @@ SQLAlchemy = "*"
 websocket_client = "*"
 Werkzeug = "*"
 gunicorn = "*"
+gevent = "*"
+passlib = "*"
 
 [requires]
 python_version = "3.7"
